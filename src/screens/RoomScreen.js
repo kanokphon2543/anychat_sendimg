@@ -26,7 +26,7 @@ export default function RoomScreen({ route }) {
   const currentUser = user.toJSON();
   const [image, setImage] = useState([]);
 
-  async function handleSend(messages,image) {
+  async function handleSend(messages) {
     const text = messages[0].text;
     const img = image[0];
 
@@ -211,7 +211,7 @@ export default function RoomScreen({ route }) {
 
       renderActions={renderActions}
       // renderMessageImage={imageProps}
-      imageProps={image}
+      // imageProps={image}
 
       renderSend={renderSend}
       scrollToBottomComponent={scrollToBottomComponent}
